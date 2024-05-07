@@ -118,6 +118,7 @@ summary {
 /* Set default line-height to 1 */
 body {
   background-image: url("./assets/background-img.png");
+  background-repeat: no-repeat;
   line-height: 1;
   font-size: 16px;
   padding: 0;
@@ -125,7 +126,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  margin: 0 220px;
 }
 
 /* Remove the list-style on list items */
@@ -140,10 +140,3 @@ a {
   color: white;
   text-decoration: none;
 }
-
-
-
-
-
-
-

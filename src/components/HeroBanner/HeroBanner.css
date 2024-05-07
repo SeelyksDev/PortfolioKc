@@ -1,38 +1,38 @@
 .heroBanner {
-margin-top: 60px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 90px 220px 120px 220px;
 
-.heroBanner__leftside {
 }
 
 .heroBanner__name {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .heroBanner__job {
     font-size: 65px;
     font-weight: bold;
-    background: rgb(167,23,205);
-    background: linear-gradient(98deg, rgba(167,23,205,1) 3%, rgba(255,255,255,1) 26%);
+    background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 63%);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;     
-    margin-bottom: 20px; 
+    color: transparent;
+    margin-bottom: 20px;
+    line-height: 70px;
 }
 
 .heroBanner__subtitle {
     font-size: 18px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .heroBanner__picture {
     height: 30em;
     border-radius: 30px;
+    border: 2px solid #e303fc;
+    margin-right: 60px;
 }
 
 .heroBanner__socialContainer {
@@ -42,12 +42,24 @@ justify-content: space-between;
 
 .heroBanner__cv {
     display: flex;
-    align-items: center;
     border: 2px solid purple;
-    padding: 15px;
+    padding: 20px 35px;
     border-radius: 30px;
+    letter-spacing: 1px;
+
+}
+
+.fa-download {
+    margin-left: 10px;
 }
 
 .heroBanner__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 30px;
+    border: 2px solid purple;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
 }

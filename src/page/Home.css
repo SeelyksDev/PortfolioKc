@@ -1,3 +1,39 @@
 header {
   margin-top: 40px;
+  margin: 40px 220px 0 220px;
+}
+
+.a-propos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  overflow: hidden;
+}
+
+.a-propos__header {
+  display: flex;
+  align-items: center;
+  margin: 60px 0 41px 0;
+}
+
+.a-propos__title {
+  font-size: 45px;
+  font-weight: bold;
+  background: rgb(167, 23, 205);
+  background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 91%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-right: 30px;
+}
+
+.a-propos__picture {
+  height: 150px;
+}
+
+.a-propos__content {
+  margin: 0 220px 100px 220px;
+  line-height: 30px;
+  font-size: 18px;
 }
