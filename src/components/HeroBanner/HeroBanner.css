@@ -1,0 +1,53 @@
+.heroBanner {
+margin-top: 60px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.heroBanner__leftside {
+}
+
+.heroBanner__name {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.heroBanner__job {
+    font-size: 65px;
+    font-weight: bold;
+    background: rgb(167,23,205);
+    background: linear-gradient(98deg, rgba(167,23,205,1) 3%, rgba(255,255,255,1) 26%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;     
+    margin-bottom: 20px; 
+}
+
+.heroBanner__subtitle {
+    font-size: 18px;
+    margin-bottom: 40px; 
+}
+
+.heroBanner__picture {
+    height: 30em;
+    border-radius: 30px;
+}
+
+.heroBanner__socialContainer {
+    display: flex;
+    align-items: center;
+}
+
+.heroBanner__cv {
+    display: flex;
+    align-items: center;
+    border: 2px solid purple;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.heroBanner__social {
+    margin-left: 30px;
+}

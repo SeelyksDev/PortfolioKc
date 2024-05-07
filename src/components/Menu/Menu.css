@@ -1,0 +1,40 @@
+.menu__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__logo-mail {
+    display: flex;
+    align-items: center;
+}
+
+.menu__mail {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu__logo {
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.menu__links__container {
+    display: flex;
+    align-items: center;
+}
+
+.menu__link {
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.menu__link--nomargin {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: rgb(202,0,255);
+    background: linear-gradient(98deg, rgba(202,0,255,1) 27%, rgba(47,7,45,1) 100%);
+    font-weight: bold;
+    margin-right: 0;
+}
