@@ -119,6 +119,7 @@ summary {
 body {
   background-image: url("./assets/background-img.png");
   background-repeat: no-repeat;
+  background-size: cover;
   line-height: 1;
   font-size: 16px;
   padding: 0;
