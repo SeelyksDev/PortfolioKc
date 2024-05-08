@@ -1,17 +1,21 @@
 import Menu from "../components/Menu/Menu";
 import Herobanner from "../components/HeroBanner/HeroBanner";
-import bitmojiHey from "../assets/me-hey.png";
+import bitmojiHey from "../assets/me/me-hey.png";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
+import ProjectCardData from "../data/projectCardData.json";
 import "./Home.css";
 
 function Home() {
     return (
-        <section className="container">
+        <section className="container" id="container">
             <header className="header">
                 <Menu />
             </header>
             <main className="main-home">
-                <Herobanner />
-                <section className="a-propos">
+                <section className="heroBanner__container">
+                    <Herobanner />
+                </section>
+                <section className="a-propos" id="a-propos">
                     <div className="a-propos__header">
                         <h2 className="a-propos__title">À propos de moi ! </h2>
                         <img
@@ -32,6 +36,25 @@ function Home() {
                         relever les défis les plus complexes et à transformer
                         les idées en réalité.
                     </p>
+                </section>
+                <section className="projets" id="projets">
+                    <div className="projet-title-glass">
+                        <h2 className="projets__title">Mes projets</h2>
+                    </div>
+                    <p className="projets__subtitle">
+                        Je mets vos idées et donc vos souhaits sous la forme
+                        d'un projet web unique qui vous inspire, vous et vos
+                        clients.
+                    </p>
+                    <div className="projets__cardsContainer">
+                        {ProjectCardData.map((data, index) => (
+                            <ProjectCard
+                                key={data.id}
+                                image={data.cover}
+                                alt={data.alt}
+                            />
+                        ))}
+                    </div>
                 </section>
             </main>
         </section>

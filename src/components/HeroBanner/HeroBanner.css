@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 90px 220px 155px 220px;
-
+    padding: 90px 220px 155px 220px;
+    max-width: 1440px;
+    width: 100vw;
 }
 
 .heroBanner__name {

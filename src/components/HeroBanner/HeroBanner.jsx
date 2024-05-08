@@ -1,4 +1,4 @@
-import portrait from "../../assets/moi.jpg";
+import portrait from "../../assets/me/moi.jpg";
 import "./HeroBanner.css";
 
 const HeroBanner = () => {

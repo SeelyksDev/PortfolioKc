@@ -1,0 +1,70 @@
+[
+    {
+        "id": "yYEGcXtprkHC",
+        "cover": "./projets/SophieBluel/HomeSB.png",
+        "alt": "page d'accueil du site Sophie Bluel",
+        "pictures": [
+            "./projets/SophieBluel/HomeSB.png",
+            "./projets/SophieBluel/FilterSB.png",
+            "./projets/SophieBluel/LoginSB.png",
+            "./projets/SophieBluel/ModaleSB.png",
+            "./projets/SophieBluel/AddSB.png"
+        ],
+        "title": "Sophie Bluel",
+        "technology" : [
+            "<i class='fa-brands fa-html5'></i>",
+            "<i class='fa-brands fa-css3-alt'></i>",
+            "<i class='fa-brands fa-js'></i>"
+        ],
+        "description": "SB desc"
+    },
+    {
+        "id": "CW2WZT0sbJtv",
+        "cover": "./projets/Kasa/HomeKasa.png",
+        "alt": "page d'accueil du site Kasa",
+        "pictures": [
+            "./projets/Kasa/HomeKasa.png",
+            "./projets/Kasa/RentalKasa.png",
+            "./projets/Kasa/AboutKasa.png"
+        ],
+        "title": "Kasa",
+        "technology" : [
+            "<i class='fa-brands fa-sass'></i>",
+            "<i class='fa-brands fa-react'></i>"
+        ],
+        "description": "Kasa desc"
+    },
+    {
+        "id": "BlRgiXWiLAir",
+        "cover": "./projets/724Events/Home724.png",
+        "alt": "page d'accueil du site 724Events",
+        "pictures": [
+            "./projets/724Events/Home724.png",
+            "./projets/724Events/Filter724.png",
+            "./projets/724Events/Form724.png"
+        ],
+        "title": "724Events",
+        "technology" : [
+            "<i class='fa-brands fa-react'></i>",
+            "<i class='fa-solid fa-bug'></i>"
+        ],
+        "description": "724 desc"
+    },
+    {
+        "id": "I11sX98Zr14o",
+        "cover": "./projets/ArgentBank/HomeAB.png",
+        "alt": "page d'accueil du site ArgentBank",
+        "pictures": [
+            "./projets/ArgentBank/HomeAB.png",
+            "./projets/ArgentBank/LoginAB.png",
+            "./projets/ArgentBank/ProfileAB.png"
+        ],
+        "title": "Argent Bank",
+        "technology" : [
+            "<i class='fa-brands fa-react'></i>",
+            "<i class='fa-brands fa-css3-alt'></i>",
+            "./logoTech/Redux.png"
+        ],
+        "description": "ArgentBank desc"
+    }
+]
