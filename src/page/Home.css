@@ -68,13 +68,14 @@ header {
 }
 
 .projets__title {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   background: rgb(167, 23, 205);
   background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 87%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  cursor: default;
 }
 
 .projets__subtitle {

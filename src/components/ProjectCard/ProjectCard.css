@@ -1,4 +1,5 @@
 .glass-container {
+    cursor: pointer;
     display: inline-block;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -8,6 +9,12 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 20px;
     max-width: 615px;
+    transition: transform 0.3s ease;
+}
+
+.glass-container:hover {
+    z-index: 2;
+    transform: scale(1.1);
 
 }
 
@@ -15,5 +22,5 @@
     height: 270px;
     width: 100%;
     object-fit: fill;
-    border-radius: 18px;
+    border-radius: 14px;
 }
