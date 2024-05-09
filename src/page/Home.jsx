@@ -4,8 +4,16 @@ import bitmojiHey from "../assets/me/me-hey.png";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import ProjectCardData from "../data/projectCardData.json";
 import "./Home.css";
+import ModalProject from "../components/ModalProject/ModalProject";
+import { useState } from "react";
 
 function Home() {
+    const [isOpened, setIsOpened] = useState(false);
+
+    const closeModal = () => {
+        setIsOpened(false);
+    };
+
     return (
         <section className="container" id="container">
             <header className="header">
@@ -52,8 +60,12 @@ function Home() {
                                 key={data.id}
                                 image={data.cover}
                                 alt={data.alt}
+                                onClick={() => setIsOpened(true)}
                             />
                         ))}
+                        {isOpened ? (
+                            <ModalProject closeModal={closeModal} />
+                        ) : null}
                     </div>
                 </section>
             </main>
