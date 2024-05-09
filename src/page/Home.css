@@ -86,7 +86,7 @@ header {
 .projets__cardsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
   margin: 90px 220px;
   max-width: 1440px;
 }
