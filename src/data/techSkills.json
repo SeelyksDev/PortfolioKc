@@ -1,0 +1,34 @@
+[
+    {
+        "logo":"./logoTech/html.png",
+        "title":"Html"
+    }, 
+    {
+        "logo":"./logoTech/css.png",
+        "title":"Css"
+    }, 
+    {
+        "logo":"./logoTech/sass.png",
+        "title":"Sass"
+    }, 
+    {
+        "logo":"./logoTech/js.png",
+        "title":"JavaScript"
+    }, 
+    {
+        "logo":"./logoTech/react.png",
+        "title":"React"
+    }, 
+    {
+        "logo":"./logoTech/Redux.png",
+        "title":"Redux"
+    }, 
+    {
+        "logo":"./logoTech/figma.png",
+        "title":"Figma"
+    }, 
+    {
+        "logo":"./logoTech/github.png",
+        "title":"Github"
+    }
+]

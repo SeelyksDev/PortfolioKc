@@ -11,10 +11,10 @@
             "./projets/SophieBluel/AddSB.png"
         ],
         "title": "Sophie Bluel",
-        "technology" : [
-            "<i class='fa-brands fa-html5'></i>",
-            "<i class='fa-brands fa-css3-alt'></i>",
-            "<i class='fa-brands fa-js'></i>"
+        "technology": [
+            "./logoTech/html.png",
+            "./logoTech/css.png",
+            "./logoTech/js.png"
         ],
         "description": "SB desc"
     },
@@ -28,9 +28,9 @@
             "./projets/Kasa/AboutKasa.png"
         ],
         "title": "Kasa",
-        "technology" : [
-            "<i class='fa-brands fa-sass'></i>",
-            "<i class='fa-brands fa-react'></i>"
+        "technology": [
+            "./logoTech/react.png",
+            "./logoTech/sass.png"
         ],
         "description": "Kasa desc"
     },
@@ -44,9 +44,8 @@
             "./projets/724Events/Form724.png"
         ],
         "title": "724Events",
-        "technology" : [
-            "<i class='fa-brands fa-react'></i>",
-            "<i class='fa-solid fa-bug'></i>"
+        "technology": [
+            "./logoTech/react.png"     
         ],
         "description": "724 desc"
     },
@@ -60,9 +59,8 @@
             "./projets/ArgentBank/ProfileAB.png"
         ],
         "title": "Argent Bank",
-        "technology" : [
-            "<i class='fa-brands fa-react'></i>",
-            "<i class='fa-brands fa-css3-alt'></i>",
+        "technology": [
+            "./logoTech/react.png",
             "./logoTech/Redux.png"
         ],
         "description": "ArgentBank desc"

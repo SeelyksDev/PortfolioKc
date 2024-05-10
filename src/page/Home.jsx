@@ -3,15 +3,16 @@ import Herobanner from "../components/HeroBanner/HeroBanner";
 import bitmojiHey from "../assets/me/me-hey.png";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import ProjectCardData from "../data/projectCardData.json";
+import TechSkills from "../data/techSkills.json";
 import "./Home.css";
 import ModalProject from "../components/ModalProject/ModalProject";
 import { useState } from "react";
 
-function Home() {
-    const [isOpened, setIsOpened] = useState(false);
+const Home = () => {
+    const [selectedProject, setSelectedProject] = useState(null);
 
-    const closeModal = () => {
-        setIsOpened(false);
+    const handleCardClick = (data) => {
+        setSelectedProject(data);
     };
 
     return (
@@ -60,17 +61,43 @@ function Home() {
                                 key={data.id}
                                 image={data.cover}
                                 alt={data.alt}
-                                onClick={() => setIsOpened(true)}
+                                onClick={() => handleCardClick(data)}
                             />
                         ))}
-                        {isOpened ? (
-                            <ModalProject closeModal={closeModal} />
-                        ) : null}
+                        {selectedProject && (
+                            <ModalProject
+                                projectData={selectedProject}
+                                closeModal={() => setSelectedProject(null)}
+                            />
+                        )}
                     </div>
+                </section>
+                <section className="mySkills">
+                    <div className="skills-title-glass">
+                        <h2 className="skill-title">Mes Skills</h2>
+                    </div>
+                    <p className="skill-subtitle">
+                        Les technologies & logiciels utilisés à travers ma jeune
+                        expérience.
+                    </p>
+                    <section className="skills-cards">
+                        {TechSkills.map((skill, index) => (
+                            <div key={index} className="skill-card-description">
+                                <div className="skill-card">
+                                    <img
+                                        className="skill-logo"
+                                        src={skill.logo}
+                                        alt="logo-skills"
+                                    />
+                                </div>
+                                <p className="title-logo">{skill.title}</p>
+                            </div>
+                        ))}
+                    </section>
                 </section>
             </main>
         </section>
     );
-}
+};
 
 export default Home;
