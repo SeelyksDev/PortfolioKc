@@ -34,8 +34,13 @@ const Menu = () => {
                         Skills
                     </a>
                 </li>
-                <a href="#">
-                    <li className="menu__link--nomargin">Contact</li>
+                <a
+                    href="../../assets/cv-kevin-cordier.pdf"
+                    download="cv-kevin-cordier.pdf"
+                >
+                    <li className="menu__link--nomargin">
+                        Download CV <i className="fa-solid fa-download"></i>
+                    </li>
                 </a>
             </ul>
         </nav>
