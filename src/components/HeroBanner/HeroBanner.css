@@ -29,11 +29,20 @@
     margin-bottom: 40px;
 }
 
+.heroBanner__glassPicture {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-right: 60px;
+    padding: 25px;
+    border-radius: 30px;
+}
+
 .heroBanner__picture {
     height: 30em;
-    border-radius: 30px;
-    border: 2px solid #e303fc;
-    margin-right: 60px;
+    border-radius: 20px;
 }
 
 .heroBanner__socialContainer {

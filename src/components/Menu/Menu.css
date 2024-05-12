@@ -31,15 +31,16 @@
 }
 
 .link:hover {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid;
     border-image: linear-gradient(98deg, rgba(202, 0, 255, 1) 27%, rgba(47, 7, 45, 1) 100%) 1;
 }
 
 .menu__link--nomargin {
     padding: 15px 30px;
     border-radius: 25px;
-    background: rgb(202, 0, 255);
-    background: linear-gradient(98deg, rgba(202, 0, 255, 1) 27%, rgba(47, 7, 45, 1) 100%);
+    background-image: url(../../assets/background/background-projects.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-weight: bold;
     margin-right: 0;
     margin-left: 30px;

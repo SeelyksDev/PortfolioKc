@@ -43,11 +43,13 @@ const HeroBanner = () => {
                 </ul>
             </section>
             <section className="heroBanner__rightside">
-                <img
-                    className="heroBanner__picture"
-                    src={portrait}
-                    alt="portrait representant kevin"
-                />
+                <div className="heroBanner__glassPicture">
+                    <img
+                        className="heroBanner__picture"
+                        src={portrait}
+                        alt="portrait representant kevin"
+                    />
+                </div>
             </section>
         </section>
     );

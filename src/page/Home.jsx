@@ -30,26 +30,46 @@ const Home = () => {
                 <section className="heroBanner__container">
                     <Herobanner />
                 </section>
-                <section className="a-propos" id="a-propos">
-                    <div className="a-propos__header">
-                        <h2 className="a-propos__title">À propos de moi ! </h2>
-                        <img
-                            className="a-propos__picture"
-                            src={bitmojiHey}
-                            alt="bitmoji-hey"
-                        />
-                    </div>
-                    <p className="a-propos__content">
-                        Je suis un créateur passionné et un developpeur
-                        enthousiaste qui cherche constamment à allier
-                        l'esthétique et la fonctionnalité dans mes projets. Je
-                        suis prêt à relever les défis les plus complexes et à
-                        transformer les idées en réalité.
-                    </p>
+                <section className="a-propos-formation-container" id="a-propos">
+                    <section className="a-propos">
+                        <div className="a-propos__header">
+                            <h2 className="a-propos__title">À propos de moi</h2>
+                        </div>
+                        <p className="a-propos__content">
+                            Je suis un jeune développeur enthousiaste de 23 ans
+                            qui cherche constamment à allier l'esthétique et la
+                            fonctionnalité dans mes projets. Je suis prêt à
+                            relever les défis les plus complexes et à
+                            transformer les idées en réalité.
+                        </p>
+                    </section>
+                    <section className="myExperience">
+                        <div className="myExperience__titleBackground">
+                            <h2 className="myExperience__title">
+                                Mon Expérience
+                            </h2>
+                        </div>
+                        <p className="myExperience__text">
+                            La formation d'Intégrateur Web chez OpenClassrooms
+                            m'a permis durant neuf mois enrichissants de plonger
+                            au cœur des technologies fondamentales de
+                            l'intégration web, acquérant les compétences
+                            nécessaires pour concevoir et développer des sites
+                            web modernes et fonctionnels. Cette formation m'a
+                            permis de pratiquer les langages de balisage HTML et
+                            CSS, ainsi que des outils avancés tels que Sass.
+                            J'ai également exploré les possibilités infinies
+                            offertes par JavaScript. Un aspect essentiel de
+                            cette formation était la compréhension approfondie
+                            du SEO. L'un des moments forts de cette formation a
+                            été l'exploration de React et Redux, deux
+                            technologies révolutionnaires.
+                        </p>
+                    </section>
                 </section>
                 <section className="projets" id="projets">
                     <div className="projet-title-glass">
-                        <h2 className="projets__title">Mes projets</h2>
+                        <h2 className="projets__title">Mes Projets</h2>
                     </div>
                     <p className="projets__subtitle">
                         Je mets vos idées et donc vos souhaits sous la forme

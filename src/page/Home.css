@@ -11,23 +11,36 @@ header {
   background-size: cover;
 }
 
+.a-propos-formation-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: black;
+  padding: 0 220px;
+}
+
 .a-propos {
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
-  background-color: black;
 }
 
 .a-propos__header {
   max-width: 1440px;
   display: flex;
   align-items: center;
-  margin: 60px 0 41px 0;
+  margin: 90px 0 60px 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 25px 30px;
 }
 
 .a-propos__title {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   background: rgb(167, 23, 205);
   background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 91%);
@@ -43,9 +56,41 @@ header {
 
 .a-propos__content {
   max-width: 1440px;
-  margin: 0 220px 100px 220px;
   line-height: 30px;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.myExperience {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.myExperience__titleBackground {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 25px 30px;
+  margin: 80px 0 60px 0;
+}
+
+.myExperience__title {
+  font-size: 40px;
+  font-weight: bold;
+  background: rgb(167, 23, 205);
+  background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.myExperience__text {
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 90px;
 }
 
 .projets {
@@ -158,4 +203,5 @@ header {
   font-size: 20px;
   margin-top: 20px;
   font-weight: bold;
+  cursor: default;
 }
