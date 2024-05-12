@@ -117,6 +117,9 @@ summary {
 
 /* Set default line-height to 1 */
 body {
+  background-image: url(./assets/background/background-projects.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   line-height: 1;
   font-size: 16px;
   padding: 0;
@@ -137,4 +140,25 @@ ul {
 a {
   color: white;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background: rgb(167, 23, 205);
+  background: linear-gradient(176deg, rgba(167, 23, 205, 1) 0%, rgba(73, 39, 147, 1) 84%);
+  width: 7px;
+  /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  height: 65px;
+  background-color: white;
+  cursor: pointer;
+  /* Couleur du curseur de la barre de défilement */
+  border-radius: 5px;
+  /* Bord arrondi du curseur */
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  /* Masquer les boutons de la barre de défilement */
 }

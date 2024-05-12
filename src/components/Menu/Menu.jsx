@@ -30,7 +30,7 @@ const Menu = () => {
                     </a>
                 </li>
                 <li className="menu__link">
-                    <a className="link" href="#">
+                    <a className="link" href="#MySkill">
                         Skills
                     </a>
                 </li>

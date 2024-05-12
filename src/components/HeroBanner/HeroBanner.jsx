@@ -10,7 +10,7 @@ const HeroBanner = () => {
                     Développeur <br /> Front-End Junior
                 </h1>
                 <p className="heroBanner__subtitle">
-                    Plongez dans mon portfolio pour découvrir mes projets,
+                    Plongez dans mon portfolio pour découvrir mes projets et
                     <br /> mes compétences en constante évolution
                 </p>
                 <ul className="heroBanner__socialContainer">

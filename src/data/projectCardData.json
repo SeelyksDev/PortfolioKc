@@ -16,7 +16,8 @@
             "./logoTech/css.png",
             "./logoTech/js.png"
         ],
-        "description": "SB desc"
+        "description": "SB desc",
+        "link": "https://github.com/SeelyksDev/ArchiWebos"
     },
     {
         "id": "CW2WZT0sbJtv",
@@ -32,7 +33,8 @@
             "./logoTech/react.png",
             "./logoTech/sass.png"
         ],
-        "description": "Kasa desc"
+        "description": "Kasa desc",
+        "link": "https://github.com/SeelyksDev/Kasa"
     },
     {
         "id": "BlRgiXWiLAir",
@@ -47,7 +49,8 @@
         "technology": [
             "./logoTech/react.png"     
         ],
-        "description": "724 desc"
+        "description": "724 desc",
+        "link": "https://github.com/SeelyksDev/724Events"
     },
     {
         "id": "I11sX98Zr14o",
@@ -63,6 +66,7 @@
             "./logoTech/react.png",
             "./logoTech/Redux.png"
         ],
-        "description": "ArgentBank desc"
+        "description": "ArgentBank desc",
+        "link": "https://github.com/SeelyksDev/ArgentBank"
     }
 ]

@@ -1,11 +1,37 @@
+import { useEffect, useRef } from "react";
 import arrowLeft from "../../assets/arrowLeft.png";
 import arrowRight from "../../assets/arrowRight.png";
 import "./ModalProject.css";
 
-const ModalProject = ({ closeModal, projectData }) => {
+const ModalProject = ({ closeModal, projectData, stopScroll }) => {
+    const modalRef = useRef(null);
+
+    useEffect(() => {
+        stopScroll();
+        // Ajoute un écouteur d'événements pour gérer les clics à l'extérieur de la modal
+        document.addEventListener("mousedown", handleOutsideClick);
+        // Retourne une fonction de nettoyage pour supprimer l'écouteur d'événements
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+        };
+    }, []);
+
+    const handleOutsideClick = (event) => {
+        // Si l'événement de clic se produit à l'extérieur de la modal, fermez la modal
+        if (modalRef.current && !modalRef.current.contains(event.target)) {
+            closeModal();
+            document.body.style.overflow = "auto"; // Réactiver le défilement
+        }
+    };
+
+    const handleModalClose = () => {
+        closeModal();
+        document.body.style.overflow = "auto"; // Réactiver le défilement
+    };
+
     return (
         <section className="modal-blur-container">
-            <div className="modal-container">
+            <div ref={modalRef} className="modal-container">
                 <div className="carousel">
                     <img
                         className="carousel__img"
@@ -48,11 +74,11 @@ const ModalProject = ({ closeModal, projectData }) => {
                 </p>
 
                 <ul className="buttons-container">
-                    <li className="btn-close" onClick={closeModal}>
+                    <li className="btn-close" onClick={handleModalClose}>
                         Fermer
                     </li>
-                    <a href="#">
-                        <li>Ouvrir sur GitHub</li>
+                    <a href={projectData.link} target="_blank" rel="noreferrer">
+                        <li onClick={handleModalClose}>Ouvrir sur GitHub</li>
                     </a>
                 </ul>
             </div>

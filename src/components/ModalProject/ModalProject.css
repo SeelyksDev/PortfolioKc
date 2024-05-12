@@ -1,11 +1,11 @@
 .modal-container {
-    filter: none;
+    height: auto;
     z-index: 1000;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -17,12 +17,12 @@
 .carousel {
     position: relative;
     border-radius: 14px;
-    height: 200px;
+    height: 400px;
 }
 
 .carousel__img {
     border-radius: 14px;
-    height: 200px;
+    height: 100%;
     width: 100%;
     object-fit: fill;
 }
@@ -32,6 +32,7 @@
     top: 50%;
     height: 30px;
     transform: translate(0%, -50%);
+    cursor: pointer;
 }
 
 .left {
@@ -47,6 +48,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.modal-description-title {
+    font-weight: bold;
 }
 
 .tech-icon {
