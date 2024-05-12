@@ -26,7 +26,6 @@
 
 .heroBanner__subtitle {
     font-size: 18px;
-    margin-bottom: 40px;
 }
 
 .heroBanner__glassPicture {
@@ -35,7 +34,6 @@
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    margin-right: 60px;
     padding: 25px;
     border-radius: 30px;
 }
@@ -46,30 +44,33 @@
 }
 
 .heroBanner__socialContainer {
+    margin-top: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
 }
 
-.heroBanner__cv {
-    display: flex;
-    border: 2px solid purple;
-    padding: 20px 35px;
-    border-radius: 30px;
-    letter-spacing: 1px;
-
-}
-
-.fa-download {
-    margin-left: 10px;
-}
 
 .heroBanner__social {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
-    border: 2px solid purple;
-    height: 55px;
-    width: 55px;
+    background-image: url(../../assets/background/background-projects.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 70px;
     border-radius: 50px;
+}
+
+
+.linkedin, .github {
+    font-weight: bold;
+    margin-right: 12px;
 }

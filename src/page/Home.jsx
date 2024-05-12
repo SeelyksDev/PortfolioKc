@@ -30,6 +30,25 @@ const Home = () => {
                 <section className="heroBanner__container">
                     <Herobanner />
                 </section>
+                <ul className="info">
+                    <li className="info__location info__bubble">
+                        <i className="fa-solid fa-location-dot"></i>
+                        <p className="location__text">Île-de-France</p>
+                    </li>
+                    <li className="info__project info__bubble">
+                        <i class="fa-solid fa-check"></i>
+                        <p>Nombre de projets : 12</p>
+                    </li>
+                    <li className="info__email info__bubble">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a
+                            className="menu__mail"
+                            href="mailto:kevincordier.dev@gmail.com"
+                        >
+                            kevincordier.dev@gmail.com
+                        </a>
+                    </li>
+                </ul>
                 <section className="a-propos-formation-container" id="a-propos">
                     <section className="a-propos">
                         <div className="a-propos__header">
@@ -43,13 +62,11 @@ const Home = () => {
                             transformer les idées en réalité.
                         </p>
                     </section>
-                    <section className="myExperience">
-                        <div className="myExperience__titleBackground">
-                            <h2 className="myExperience__title">
-                                Mon Expérience
-                            </h2>
+                    <section className="myEducation">
+                        <div className="myEducation__titleBackground">
+                            <h2 className="myEducation__title">Ma Formation</h2>
                         </div>
-                        <p className="myExperience__text">
+                        <p className="myEducation__text">
                             La formation d'Intégrateur Web chez OpenClassrooms
                             m'a permis durant neuf mois enrichissants de plonger
                             au cœur des technologies fondamentales de

@@ -18,8 +18,10 @@ const HeroBanner = () => {
                         href="https://www.linkedin.com/in/kevincordierdev/"
                         target="_blank"
                         rel="noreferrer"
+                        className="heroBanner__social linkedin-margin"
                     >
-                        <li className="heroBanner__social">
+                        <li>
+                            <span className="linkedin">LinkedIn</span>
                             <i className="fa-brands fa-linkedin"></i>
                         </li>
                     </a>
@@ -27,8 +29,10 @@ const HeroBanner = () => {
                         href="https://github.com/SeelyksDev"
                         target="_blank"
                         rel="noreferrer"
+                        className="heroBanner__social"
                     >
-                        <li className="heroBanner__social">
+                        <li>
+                            <span className="github">Github</span>
                             <i className="fa-brands fa-github"></i>
                         </li>
                     </a>
