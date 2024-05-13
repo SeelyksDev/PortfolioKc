@@ -1,5 +1,5 @@
 import "./Menu.css";
-import MePc from "../../assets/me/bitmoji pc.png";
+import MePc from "../../assets/me/bitmoji-pc.png";
 
 const Menu = () => {
     return (

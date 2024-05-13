@@ -1,0 +1,29 @@
+@import '../../utils/mixins.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include glass-container;
+        padding: 20px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 1440px;
+    }
+    &__img {
+        height: 100px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+    &__span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+

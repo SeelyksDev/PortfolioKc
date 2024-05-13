@@ -7,6 +7,7 @@ import TechSkills from "../data/techSkills.json";
 import "./Home.css";
 import ModalProject from "../components/ModalProject/ModalProject";
 import { useState } from "react";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -139,6 +140,9 @@ const Home = () => {
                         ))}
                     </section>
                 </section>
+                <footer className='footer'>
+                    <Footer />
+                </footer>
             </main>
         </section>
     );
