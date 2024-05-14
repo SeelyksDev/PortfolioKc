@@ -14,16 +14,14 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
                 document.body.style.overflow = "auto"; // Réactiver le défilement
             }
         };
-    
+
         stopScroll();
         document.addEventListener("mousedown", handleOutsideClick);
-    
+
         return () => {
             document.removeEventListener("mousedown", handleOutsideClick);
         };
     }, [closeModal, stopScroll]);
-
-    
 
     const handleModalClose = () => {
         closeModal();
@@ -45,59 +43,64 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
     const currentImage = projectData.pictures[currentIndex];
 
     return (
-            <div ref={modalRef} className="modal">
-                <div className="modal__carousel">
+        <div ref={modalRef} className="modal">
+            <div className="modal__carousel">
+                <img
+                    className="modal__carousel__img"
+                    src={currentImage}
+                    alt="slider"
+                />
+                <div className="modal__caroussel__arrows">
                     <img
-                        className="modal__carousel__img"
-                        src={currentImage}
-                        alt="slider"
+                        className="arrow left"
+                        src={arrowLeft}
+                        alt="arrow-left"
+                        onClick={leftClick}
                     />
-                    <div className="modal__caroussel__arrows">
-                        <img
-                            className="arrow left"
-                            src={arrowLeft}
-                            alt="arrow-left"
-                            onClick={leftClick}
-                        />
-                        <img
-                            className="arrow right"
-                            src={arrowRight}
-                            alt="arrow-right"
-                            onClick={rightClick}
-                        />
-                    </div>
+                    <img
+                        className="arrow right"
+                        src={arrowRight}
+                        alt="arrow-right"
+                        onClick={rightClick}
+                    />
                 </div>
-                <div className="modal__description">
-                    <h3 className="modal__description__title">
-                        {projectData.title}
-                    </h3>
-                    <ul>
-                        {projectData.technology.map((tech, index) => (
-                            <img
-                                key={index}
-                                src={tech}
-                                alt="tech-icon"
-                                className="modal__description__techIcon"
-                            />
-                        ))}
-                    </ul>
-                </div>
-                <p className="modal__description__text">{projectData.description}</p>
-
-                <ul className="modal__description__buttonsContainer">
-                    <div className="modal__description__closeContainer" onClick={handleModalClose}>
-                        <li>FERMER</li>
-                    </div>
-                    <a
-                        className="modal__description__btnGithub"
-                        href={projectData.link}
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <li onClick={handleModalClose}>OUVRIR SUR GITHUB</li>
-                    </a>
+            </div>
+            <div className="modal__description">
+                <h3 className="modal__description__title">
+                    {projectData.title}
+                </h3>
+                <ul>
+                    {projectData.technology.map((tech, index) => (
+                        <img
+                            key={index}
+                            src={tech}
+                            alt="tech-icon"
+                            className="modal__description__techIcon"
+                        />
+                    ))}
                 </ul>
             </div>
+            <p className="modal__description__text">
+                {projectData.description}
+            </p>
+
+            <ul className="modal__description__buttonsContainer">
+                <div
+                    className="modal__description__closeContainer"
+                    onClick={handleModalClose}
+                >
+                    <li>FERMER</li>
+                </div>
+                <a
+                    className="modal__description__btnGithub"
+                    href={projectData.link}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <li onClick={handleModalClose}>OUVRIR SUR GITHUB</li>
+                </a>
+            </ul>
+        </div>
     );
 };
 

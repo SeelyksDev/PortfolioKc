@@ -1,15 +1,14 @@
-import Header from "../components/Header/Header";
-import Herobanner from "../components/HeroBanner/HeroBanner";
-import Footer from "../components/Footer/Footer";
-import Info from "../components/Info/Info";
+import Header from "../containers/Header/Header";
+import Herobanner from "../containers/HeroBanner/HeroBanner";
+import Footer from "../containers/Footer/Footer";
+import Info from "../containers/Info/Info";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Education from "../components/Education/Education";
-import Project from "../components/Projects/Project";
+import Project from "../containers/Projects/Project";
+import Skills from "../containers/Skills/Skills";
 import "./Home.scss";
-import Skills from "../components/Skills/Skills";
 
 const Home = () => {
-
     return (
         <section className="container" id="container">
             <Header />
@@ -23,7 +22,7 @@ const Home = () => {
                 <Project />
                 <Skills />
             </main>
-                <Footer />
+            <Footer />
         </section>
     );
 };

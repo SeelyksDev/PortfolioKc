@@ -1,37 +1,40 @@
 @import "../../utils/mixins.scss";
 
 .info {
+    display: flex;
+    justify-content: center;
+    @include glass-container;
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 35px 220px;
-        @include glass-container;
-      }
+        width: 100%;
+        max-width: 1440px;
+    }
 
-      &__bubble {
+    &__bubble {
         display: flex;
         align-items: center;
         font-size: 18px;
         @include glass-container;
         padding: 30px;
         border-radius: 40px;
-      }
+    }
 
-      &__bubble i {
+    &__bubble i {
         margin-right: 20px;
-      }
+    }
 }
 
 .fa-location-dot {
     color: red;
-  }
-  
-  .fa-envelope {
+}
+
+.fa-envelope {
     color: #f0c700;
-  }
-  
-  .fa-check {
+}
+
+.fa-check {
     color: greenyellow;
-  }
-  
+}

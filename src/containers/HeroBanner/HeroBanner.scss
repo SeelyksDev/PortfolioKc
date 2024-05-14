@@ -1,4 +1,4 @@
-@import '../../utils/mixins.scss';
+@import "../../utils/mixins.scss";
 
 .heroBanner {
     display: flex;
@@ -23,7 +23,11 @@
     &__job {
         font-size: 65px;
         font-weight: bold;
-        background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 63%);
+        background: linear-gradient(
+            48deg,
+            rgba(167, 23, 205, 1) 0%,
+            rgba(255, 255, 255, 1) 63%
+        );
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -69,7 +73,6 @@
             transform: scale(1.08);
         }
     }
-
 }
 
 .linkedin,

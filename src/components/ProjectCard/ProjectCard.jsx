@@ -8,4 +8,4 @@ const ProjectCard = ({ image, alt, onClick }) => {
     );
 };
 
-export default ProjectCard; 
+export default ProjectCard;

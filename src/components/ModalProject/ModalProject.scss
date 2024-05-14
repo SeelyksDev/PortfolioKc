@@ -1,4 +1,4 @@
-@import '../../utils/mixins.scss';
+@import "../../utils/mixins.scss";
 
 .modal {
     max-width: 1440px;
@@ -30,62 +30,61 @@
     }
 
     &__description {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__title {
-        font-weight: bold;
-         font-size: 20px;
-    }
-
-    &__techIcon {
-        height: 35px;
-        margin-left: 10px;
-    }
-
-    &__text {
-        margin: 40px 0;
-        line-height: 24px;
-        font-size: 17px;
-    }
-
-    &__buttonsContainer {
+        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 
-    &__closeContainer {
-    @include background-image;
-    border-radius: 50px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 25px 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+        &__title {
+            font-weight: bold;
+            font-size: 20px;
+        }
 
-    &:hover {
-    transform: scale(1.1);
-    }
-    }
+        &__techIcon {
+            height: 35px;
+            margin-left: 10px;
+        }
 
-    &__btnGithub {
-    @include background-image;
-    border-radius: 50px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 25px 40px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
+        &__text {
+            margin: 40px 0;
+            line-height: 24px;
+            font-size: 17px;
+        }
 
-    &:hover {
-    transform: scale(1.1);
-    }
-    }
+        &__buttonsContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__closeContainer {
+            @include background-image;
+            border-radius: 50px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 25px 50px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        &__btnGithub {
+            @include background-image;
+            border-radius: 50px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 25px 40px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
-
 
 .arrow {
     position: absolute;

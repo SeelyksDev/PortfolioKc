@@ -1,4 +1,4 @@
-@import '../../utils/mixins.scss';
+@import "../../utils/mixins.scss";
 
 .glass-container {
     cursor: pointer;
@@ -13,7 +13,6 @@
 .glass-container:hover {
     z-index: 2;
     transform: scale(1.1);
-
 }
 
 .project__img {
