@@ -63,6 +63,11 @@
         @include background-image;
         padding: 20px 70px;
         border-radius: 50px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.08);
+        }
     }
 
 }
