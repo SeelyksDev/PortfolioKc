@@ -2,6 +2,7 @@ import "./Info.scss"
 
 const Info = () => {
     return (
+        <section className="info">
         <ul className="info__container">
                     <li className="info__location info__bubble">
                         <i className="fa-solid fa-location-dot"></i>
@@ -14,13 +15,14 @@ const Info = () => {
                     <li className="info__email info__bubble">
                         <i class="fa-solid fa-envelope"></i>
                         <a
-                            className="menu__mail"
+                            className="info__mail"
                             href="mailto:kevincordier.dev@gmail.com"
                         >
                             kevincordier.dev@gmail.com
                         </a>
                     </li>
                 </ul>
+                </section>
     )
 }
 

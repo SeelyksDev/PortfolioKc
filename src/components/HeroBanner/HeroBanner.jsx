@@ -3,6 +3,7 @@ import "./HeroBanner.scss";
 
 const HeroBanner = () => { 
     return (
+        <section className="heroBanner">
         <section className="heroBanner__container">
             <section className="heroBanner__leftside">
                 <p className="heroBanner__name">Je m'appelle Kevin,</p>
@@ -48,6 +49,7 @@ const HeroBanner = () => {
                 </div>
             </section>
         </section>
+    </section>
     );
 };
 

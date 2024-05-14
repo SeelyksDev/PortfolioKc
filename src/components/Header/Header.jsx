@@ -3,6 +3,7 @@ import MePc from "../../assets/me/bitmoji-pc.png";
 
 const Header = () => {
     return (
+        <header className="header">
         <nav className="header__nav" id="nav"> 
                 <img className="header__logo" src={MePc} alt="logo du site" />
             <ul className="header__allLinks">
@@ -36,6 +37,7 @@ const Header = () => {
                 </a>
             </ul>
         </nav>
+        </header>
     );
 };
 
