@@ -1,45 +1,4 @@
 
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 220px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.info__bubble {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  padding: 30px;
-  border-radius: 40px;
-}
-
-.info__bubble i {
-  margin-right: 20px;
-}
-
-.fa-location-dot {
-  color: red;
-}
-
-.fa-envelope {
-  color: #f0c700;
-}
-
-.fa-check {
-  color: greenyellow;
-}
-
 .a-propos-formation-container {
   display: flex;
   flex-direction: column;

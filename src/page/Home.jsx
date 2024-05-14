@@ -7,6 +7,7 @@ import "./Home.css";
 import ModalProject from "../components/ModalProject/ModalProject";
 import { useState } from "react";
 import Footer from "../components/Footer/Footer";
+import Info from "../components/Info/Info";
 
 const Home = () => {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -28,25 +29,9 @@ const Home = () => {
                 <section className="heroBanner">
                     <Herobanner />
                 </section>
-                <ul className="info">
-                    <li className="info__location info__bubble">
-                        <i className="fa-solid fa-location-dot"></i>
-                        <p className="location__text">Île-de-France</p>
-                    </li>
-                    <li className="info__project info__bubble">
-                        <i class="fa-solid fa-check"></i>
-                        <p>Nombre de projets : 12</p>
-                    </li>
-                    <li className="info__email info__bubble">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a
-                            className="menu__mail"
-                            href="mailto:kevincordier.dev@gmail.com"
-                        >
-                            kevincordier.dev@gmail.com
-                        </a>
-                    </li>
-                </ul>
+                <section className="info">
+                <Info />
+                </section>
                 <section className="a-propos-formation-container" id="a-propos">
                     <section className="a-propos">
                         <div className="a-propos__header">
