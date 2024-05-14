@@ -26,15 +26,26 @@
         margin-right: 60px;
     }
 
-    &__link:hover {
-    border-bottom: 3px solid;
-    border-image: linear-gradient(98deg, rgba(202, 0, 255, 1) 27%, rgba(47, 7, 45, 1) 100%) 1;
+    &__link {
+        transition: 0.2s ease-in-out;
+        &:hover {
+            padding: 20px 25px;
+            border-radius: 30px;
+            @include background-image;
+        }
     }
+
 
     &__linkContainer--nomargin {
         padding: 20px 25px;
         border-radius: 30px;
         @include background-image;
         font-weight: bold;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
+
