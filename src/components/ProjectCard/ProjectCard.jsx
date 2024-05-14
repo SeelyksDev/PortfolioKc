@@ -1,4 +1,4 @@
-import "./ProjectCard.css";
+import "./ProjectCard.scss";
 
 const ProjectCard = ({ image, alt, onClick }) => {
     return (
@@ -8,4 +8,4 @@ const ProjectCard = ({ image, alt, onClick }) => {
     );
 };
 
-export default ProjectCard;
+export default ProjectCard; 
