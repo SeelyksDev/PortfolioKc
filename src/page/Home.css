@@ -1,12 +1,4 @@
 
-.heroBanner__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .info {
   display: flex;
   align-items: center;

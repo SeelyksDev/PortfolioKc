@@ -1,0 +1,74 @@
+@import '../../utils/mixins.scss';
+
+.heroBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 90px 220px 155px 220px;
+        max-width: 1440px;
+        width: 100vw;
+    }
+
+    &__name {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__job {
+        font-size: 65px;
+        font-weight: bold;
+        background: linear-gradient(48deg, rgba(167, 23, 205, 1) 0%, rgba(255, 255, 255, 1) 63%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 20px;
+        line-height: 70px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+    }
+
+    &__glassPicture {
+        @include glass-container;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+    &__picture {
+        height: 30em;
+        border-radius: 20px;
+    }
+
+    &__socialContainer {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include glass-container;
+        border-radius: 50px;
+        padding: 20px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include background-image;
+        padding: 20px 70px;
+        border-radius: 50px;
+    }
+
+}
+
+.linkedin,
+.github {
+    font-weight: bold;
+    margin-right: 12px;
+}

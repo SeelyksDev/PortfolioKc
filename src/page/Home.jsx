@@ -24,8 +24,8 @@ const Home = () => {
             <header className="header">
                 <Header />
             </header>
-            <main className="main-home">
-                <section className="heroBanner__container">
+            <main className="main">
+                <section className="heroBanner">
                     <Herobanner />
                 </section>
                 <ul className="info">

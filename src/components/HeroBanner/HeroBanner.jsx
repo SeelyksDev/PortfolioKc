@@ -1,9 +1,9 @@
 import portrait from "../../assets/me/moi.jpg";
-import "./HeroBanner.css";
+import "./HeroBanner.scss";
 
-const HeroBanner = () => {
+const HeroBanner = () => { 
     return (
-        <section className="heroBanner">
+        <section className="heroBanner__container">
             <section className="heroBanner__leftside">
                 <p className="heroBanner__name">Je m'appelle Kevin,</p>
                 <h1 className="heroBanner__job">
@@ -18,7 +18,7 @@ const HeroBanner = () => {
                         href="https://www.linkedin.com/in/kevincordierdev/"
                         target="_blank"
                         rel="noreferrer"
-                        className="heroBanner__social linkedin-margin"
+                        className="heroBanner__social"
                     >
                         <li>
                             <span className="linkedin">LinkedIn</span>
