@@ -1,29 +1,29 @@
 import { useEffect, useRef, useState } from "react";
 import arrowLeft from "../../assets/arrowLeft.png";
 import arrowRight from "../../assets/arrowRight.png";
-import "./ModalProject.css";
+import "./ModalProject.scss";
 
 const ModalProject = ({ closeModal, projectData, stopScroll }) => {
     const modalRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                closeModal();
+                document.body.style.overflow = "auto"; // Réactiver le défilement
+            }
+        };
+    
         stopScroll();
-        // Ajoute un écouteur d'événements pour gérer les clics à l'extérieur de la modal
         document.addEventListener("mousedown", handleOutsideClick);
-        // Retourne une fonction de nettoyage pour supprimer l'écouteur d'événements
+    
         return () => {
             document.removeEventListener("mousedown", handleOutsideClick);
         };
-    }, []);
+    }, [closeModal, stopScroll]);
 
-    const handleOutsideClick = (event) => {
-        // Si l'événement de clic se produit à l'extérieur de la modal, fermez la modal
-        if (modalRef.current && !modalRef.current.contains(event.target)) {
-            closeModal();
-            document.body.style.overflow = "auto"; // Réactiver le défilement
-        }
-    };
+    
 
     const handleModalClose = () => {
         closeModal();
@@ -45,15 +45,14 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
     const currentImage = projectData.pictures[currentIndex];
 
     return (
-        <section className="modal-blur-container">
-            <div ref={modalRef} className="modal-container">
-                <div className="carousel">
+            <div ref={modalRef} className="modal">
+                <div className="modal__carousel">
                     <img
-                        className="carousel__img"
+                        className="modal__carousel__img"
                         src={currentImage}
                         alt="slider"
                     />
-                    <div className="arrows">
+                    <div className="modal__caroussel__arrows">
                         <img
                             className="arrow left"
                             src={arrowLeft}
@@ -68,8 +67,8 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
                         />
                     </div>
                 </div>
-                <div className="modal-description-header">
-                    <h3 className="modal-description-title">
+                <div className="modal__description">
+                    <h3 className="modal__description__title">
                         {projectData.title}
                     </h3>
                     <ul>
@@ -78,19 +77,19 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
                                 key={index}
                                 src={tech}
                                 alt="tech-icon"
-                                className="tech-icon"
+                                className="modal__description__techIcon"
                             />
                         ))}
                     </ul>
                 </div>
-                <p className="description">{projectData.description}</p>
+                <p className="modal__description__text">{projectData.description}</p>
 
-                <ul className="buttons-container">
-                    <div className="close-btn-glass" onClick={handleModalClose}>
-                        <li className="btn-close">FERMER</li>
+                <ul className="modal__description__buttonsContainer">
+                    <div className="modal__description__closeContainer" onClick={handleModalClose}>
+                        <li>FERMER</li>
                     </div>
                     <a
-                        className="btn-open-github"
+                        className="modal__description__btnGithub"
                         href={projectData.link}
                         target="_blank"
                         rel="noreferrer"
@@ -99,7 +98,6 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
                     </a>
                 </ul>
             </div>
-        </section>
     );
 };
 
