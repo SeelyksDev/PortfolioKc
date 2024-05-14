@@ -8,11 +8,6 @@ const Header = () => {
                 <img className="header__logo" src={MePc} alt="logo du site" />
             <ul className="header__allLinks">
                 <li className="header__linkContainer">
-                    <a className="header__link" href="#container">
-                        Accueil
-                    </a>
-                </li>
-                <li className="header__linkContainer">
                     <a className="header__link" href="#a-propos">
                         À propos de moi
                     </a>
