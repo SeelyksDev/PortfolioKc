@@ -1,6 +1,5 @@
-import Menu from "../components/Menu/Menu";
+import Header from "../components/Header/Header";
 import Herobanner from "../components/HeroBanner/HeroBanner";
-import bitmojiHey from "../assets/me/me-hey.png";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import ProjectCardData from "../data/projectCardData.json";
 import TechSkills from "../data/techSkills.json";
@@ -11,13 +10,11 @@ import Footer from "../components/Footer/Footer";
 
 const Home = () => {
     const [selectedProject, setSelectedProject] = useState(null);
-    const [scrollDisabled, setScrollDisabled] = useState(false);
 
     const handleClick = () => {
-        document.body.style.overflow = "hidden";
-        setScrollDisabled(true);
+        document.body.style.overflow = "hidden"
     };
-
+ 
     const handleCardClick = (data) => {
         setSelectedProject(data);
     };
@@ -25,7 +22,7 @@ const Home = () => {
     return (
         <section className="container" id="container">
             <header className="header">
-                <Menu />
+                <Header />
             </header>
             <main className="main-home">
                 <section className="heroBanner__container">
