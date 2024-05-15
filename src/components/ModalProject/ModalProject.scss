@@ -1,10 +1,11 @@
 @import "../../utils/mixins.scss";
 
 .modal {
-    max-width: 1440px;
+    max-width: 900px;
+    width: 70%;
     height: auto;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -21,11 +22,23 @@
         border-radius: 14px;
         height: 400px;
 
+        @media screen and (max-width: 1024px) {
+            height: 200px;
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 150px;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 100%;
+        }
+
         &__img {
             border-radius: 14px;
             height: 100%;
             width: 100%;
-            object-fit: fill;
+            object-fit: cover;
         }
     }
 
@@ -38,23 +51,66 @@
         &__title {
             font-weight: bold;
             font-size: 20px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 13px;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: 12px;
+            }
         }
 
         &__techIcon {
             height: 35px;
             margin-left: 10px;
+
+            @media screen and (max-width: 1024px) {
+                height: 25px;
+            }
+
+            @media screen and (max-width: 768px) {
+                height: 20px;
+            }
+
+            @media screen and (max-width: 375px) {
+                height: 15px;
+            }
         }
 
         &__text {
             margin: 40px 0;
             line-height: 24px;
             font-size: 17px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin: 15px 0;
+                font-size: 13px;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: 10px;
+                line-height: 20px;
+            }
         }
 
         &__buttonsContainer {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         &__closeContainer {
@@ -65,6 +121,19 @@
             font-weight: bold;
             cursor: pointer;
             transition: transform 0.3s ease;
+
+            @media screen and (max-width: 1024px) {
+                padding: 20px 40px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 15px;
+                padding: 15px 35px;
+            }
+
+            @media screen and (max-width: 375px) {
+                padding: 15px 25px;
+            }
 
             &:hover {
                 transform: scale(1.1);
@@ -79,6 +148,17 @@
             font-weight: bold;
             transition: transform 0.3s ease;
 
+            @media screen and (max-width: 1024px) {
+                padding: 20px 30px;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 15px 35px;
+            }
+
+            @media screen and (max-width: 375px) {
+                padding: 15px 25px;
+            }
             &:hover {
                 transform: scale(1.1);
             }
@@ -92,6 +172,14 @@
     height: 30px;
     transform: translate(0%, -50%);
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        height: 23px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 15px;
+    }
 }
 
 .left {
@@ -100,4 +188,22 @@
 
 .right {
     right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .modal__txt__btn {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal__txt__btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .modal__txt__btn {
+        font-size: 10px;
+    }
 }

@@ -115,6 +115,14 @@ summary {
   display: list-item;
 }
 
+:root {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 /* Set default line-height to 1 */
 body {
   background-image: url(./assets/background/background-projects.png);
@@ -127,6 +135,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+  overflow-x: hidden;
 }
 
 /* Remove the list-style on list items */

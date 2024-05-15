@@ -19,7 +19,7 @@ const HeroBanner = () => {
                             href="https://www.linkedin.com/in/kevincordierdev/"
                             target="_blank"
                             rel="noreferrer"
-                            className="heroBanner__social"
+                            className="heroBanner__social linkedin-btn-social"
                         >
                             <li>
                                 <span className="linkedin">LinkedIn</span>

@@ -14,7 +14,7 @@
     }
 
     &__title {
-        font-size: 40px;
+        font-size: clamp(20px, 3vw, 40px);
         background: linear-gradient(
             48deg,
             rgba(167, 23, 205, 1) 0%,
@@ -24,11 +24,26 @@
         -webkit-background-clip: text;
         color: transparent;
         font-weight: bold;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 25px;
+        }
     }
 
     &__subtitle {
-        font-size: 20px;
+        font-size: clamp(16px, 1vw, 20px);
         margin-top: 40px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 15px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 
     &__cards {
@@ -37,6 +52,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 80px;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__containerBackground {
@@ -59,7 +83,11 @@
     }
 
     &__logo {
-        height: 150px;
+        height: clamp(70px, 5vw, 150px);
+
+        @media screen and (max-width: 1024px) {
+            height: 90px;
+        }
     }
 
     &__titleLogo {
@@ -67,5 +95,9 @@
         margin-top: 20px;
         font-weight: bold;
         cursor: default;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 15px;
+        }
     }
 }

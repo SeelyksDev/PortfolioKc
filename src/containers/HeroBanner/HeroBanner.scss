@@ -9,19 +9,43 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 90px 220px 155px 220px;
+        margin: 90px 70px 155px 70px;
         max-width: 1440px;
         width: 100vw;
+
+        @media screen and (max-width: 1024px) {
+            margin: 60px 70px 60px 70px;
+        }
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 50px 0px;
+        }
     }
 
     &__name {
-        font-size: 35px;
+        font-size: clamp(17px, 3vw, 35px);
         font-weight: bold;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: clamp(19px, 1vw, 23px);
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 35px;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
     }
 
     &__job {
-        font-size: 65px;
+        font-size: clamp(45px, 3vw, 65px);
         font-weight: bold;
         background: linear-gradient(
             48deg,
@@ -33,21 +57,78 @@
         color: transparent;
         margin-bottom: 20px;
         line-height: 70px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: clamp(35px, 2vw, 50px);
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 40px;
+            line-height: 45px;
+            background: linear-gradient(
+                48deg,
+                rgba(167, 23, 205, 1) 0%,
+                rgba(255, 255, 255, 1) 83%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 32px;
+            line-height: 35px;
+            margin-bottom: 0;
+        }
     }
 
     &__subtitle {
-        font-size: 18px;
+        font-size: clamp(15px, 1vw, 18px);
+
+        @media screen and (max-width: 1024px) {
+            font-size: clamp(13px, 1vw, 15px);
+            line-height: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 12px;
+        }
     }
 
     &__glassPicture {
         @include glass-container;
         padding: 25px;
         border-radius: 30px;
+
+        @media screen and (max-width: 375px) {
+            padding: 20px;
+        }
     }
 
     &__picture {
-        height: 30em;
+        height: clamp(20em, 25vw, 30em);
         border-radius: 20px;
+
+        @media screen and (max-width: 1024px) {
+            height: 20em;
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 12em;
+        }
+
+        @media screen and (max-width: 375px) {
+            height: 11em;
+        }
     }
 
     &__socialContainer {
@@ -58,6 +139,17 @@
         @include glass-container;
         border-radius: 50px;
         padding: 20px;
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 50px;
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+        }
     }
 
     &__social {
@@ -65,9 +157,29 @@
         align-items: center;
         justify-content: center;
         @include background-image;
-        padding: 20px 70px;
+        padding-left: clamp(15px, 2vw, 70px);
+        padding-right: clamp(15px, 2vw, 70px);
+        padding-bottom: 20px;
+        padding-top: 20px;
         border-radius: 50px;
         transition: transform 0.3s ease;
+        font-size: clamp(14px, 1vw, 18px);
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: clamp(15px, 2vw, 45px);
+            padding-right: clamp(15px, 2vw, 45px);
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 15px 40px;
+            border-radius: 15px;
+        }
+
+        @media screen and (max-width: 375px) {
+            padding: 15px 30px;
+        }
 
         &:hover {
             transform: scale(1.08);
@@ -79,4 +191,40 @@
 .github {
     font-weight: bold;
     margin-right: 12px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: clamp(9px, 1vw, 14px);
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .heroBanner__leftside {
+        margin-right: 60px;
+    }
+
+    .linkedin-btn-social {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroBanner__leftside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .linkedin-btn-social {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
 }

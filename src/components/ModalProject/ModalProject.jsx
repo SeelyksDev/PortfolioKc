@@ -89,7 +89,7 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
                     className="modal__description__closeContainer"
                     onClick={handleModalClose}
                 >
-                    <li>FERMER</li>
+                    <li className="modal__txt__btn">FERMER</li>
                 </div>
                 <a
                     className="modal__description__btnGithub"
@@ -97,7 +97,9 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <li onClick={handleModalClose}>OUVRIR SUR GITHUB</li>
+                    <li onClick={handleModalClose} className="modal__txt__btn">
+                        OUVRIR SUR GITHUB
+                    </li>
                 </a>
             </ul>
         </div>

@@ -13,11 +13,20 @@
 .glass-container:hover {
     z-index: 2;
     transform: scale(1.1);
+
+    @media screen and (max-width: 375px) {
+        transform: scale(1);
+    }
 }
 
 .project__img {
     height: 270px;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 14px;
+
+    @media screen and (max-width: 1024px) {
+        height: 200px;
+        object-fit: cover;
+    }
 }
