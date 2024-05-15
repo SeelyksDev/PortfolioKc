@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PortfolioKc/static/css/main.1553d830.css",
-    "main.js": "/PortfolioKc/static/js/main.ee8bbfa9.js",
-    "static/media/background-projects.png": "/PortfolioKc/static/media/background-projects.7734331970ff1430e7d2.png",
-    "static/media/moi.jpg": "/PortfolioKc/static/media/moi.af1c73c6a5173e23b7d6.jpg",
-    "static/media/bitmoji-pc.png": "/PortfolioKc/static/media/bitmoji-pc.a6acfe02068c00c15024.png",
-    "index.html": "/PortfolioKc/index.html",
-    "main.1553d830.css.map": "/PortfolioKc/static/css/main.1553d830.css.map",
-    "main.ee8bbfa9.js.map": "/PortfolioKc/static/js/main.ee8bbfa9.js.map"
+    "main.css": "/portfolio-kevin-crd/static/css/main.6886b15f.css",
+    "main.js": "/portfolio-kevin-crd/static/js/main.a9875a68.js",
+    "static/media/background-projects.png": "/portfolio-kevin-crd/static/media/background-projects.7734331970ff1430e7d2.png",
+    "static/media/moi.jpg": "/portfolio-kevin-crd/static/media/moi.af1c73c6a5173e23b7d6.jpg",
+    "static/media/bitmoji-pc.png": "/portfolio-kevin-crd/static/media/bitmoji-pc.a6acfe02068c00c15024.png",
+    "index.html": "/portfolio-kevin-crd/index.html",
+    "main.6886b15f.css.map": "/portfolio-kevin-crd/static/css/main.6886b15f.css.map",
+    "main.a9875a68.js.map": "/portfolio-kevin-crd/static/js/main.a9875a68.js.map"
   },
   "entrypoints": [
-    "static/css/main.1553d830.css",
-    "static/js/main.ee8bbfa9.js"
+    "static/css/main.6886b15f.css",
+    "static/js/main.a9875a68.js"
   ]
 }
