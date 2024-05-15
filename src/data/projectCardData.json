@@ -16,7 +16,7 @@
             "./logoTech/css.png",
             "./logoTech/js.png"
         ],
-        "description": "Ce projet à été basé sur la découverte de JavaScript. L'HTML et CSS était déjà fournis à part pour la page 'Login'. Le but ici était de dynamiser le site qui était de base dit 'statique'. J'ai pu aussi découvrir l'utilisation d'APIs.",
+        "description": "Ce projet a été basé sur la découverte de JavaScript. L'HTML et CSS était déjà fourni à part pour la page 'Login'. Le but ici était de dynamiser le site qui était de base dit 'statique'. J'ai pu aussi découvrir l'utilisation d'API.",
         "link": "https://github.com/SeelyksDev/ArchiWebos"
     },
     {
@@ -33,7 +33,7 @@
             "./logoTech/react.png",
             "./logoTech/sass.png"
         ],
-        "description": "Kasa est le projet qui m'a fait découvrir le framework React. A l'aide des maquettes Figma, j'ai intégrer complétement le site avec React. J'ai pu aussi y découvrir React Router.",
+        "description": "Kasa est le projet qui m'a fait découvrir le framework React. À l'aide des maquettes Figma, j'ai intégré complétement le site avec React. J'ai pu aussi y découvrir React Router.",
         "link": "https://github.com/SeelyksDev/Kasa"
     },
     {
@@ -49,7 +49,7 @@
         "technology": [
             "./logoTech/react.png"     
         ],
-        "description": "724 Events est le projet qui m'a fait découvrir les tests et le débugage. A l'aide d'outils de débugage j'ai pu analyser et cibler les bugs qui posaient problème. J'ai pu aussi mettre en place certains tests.",
+        "description": "724 Events est le projet qui m'a fait découvrir les tests et le débugage. À l'aide d'outils de débugage, j'ai pu analyser et cibler les bugs qui posaient un problème. J'ai pu aussi mettre en place certains tests.",
         "link": "https://github.com/SeelyksDev/724Events"
     },
     {
@@ -66,7 +66,7 @@
             "./logoTech/react.png",
             "./logoTech/Redux.png"
         ],
-        "description": "ArgentBank est le projet qui m'a fait découvrir Redux. En utilisant les connaissances apprise auparavant, j'ai dû migrer le site de l'html vers du React. En plus de cela j'ai du mettre en place Redux pour simplifier la transmission de données entre composants.",
+        "description": "ArgentBank est le projet qui m'a fait découvrir Redux. En utilisant les connaissances apprises auparavant, j'ai dû migrer le site de l'HTML vers du React. En plus de cela, j'ai dû mettre en place Redux pour simplifier la transmission de données entre composants.",
         "link": "https://github.com/SeelyksDev/ArgentBank"
     }
 ]
