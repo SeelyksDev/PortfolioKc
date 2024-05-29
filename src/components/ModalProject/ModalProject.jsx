@@ -3,7 +3,7 @@ import arrowLeft from "../../assets/arrowLeft.png";
 import arrowRight from "../../assets/arrowRight.png";
 import "./ModalProject.scss";
 
-const ModalProject = ({ closeModal, projectData, stopScroll }) => {
+const ModalProject = ({ closeModal, projectData }) => {
     const modalRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -11,21 +11,18 @@ const ModalProject = ({ closeModal, projectData, stopScroll }) => {
         const handleOutsideClick = (event) => {
             if (modalRef.current && !modalRef.current.contains(event.target)) {
                 closeModal();
-                document.body.style.overflow = "auto"; // Réactiver le défilement
             }
         };
 
-        stopScroll();
         document.addEventListener("mousedown", handleOutsideClick);
 
         return () => {
             document.removeEventListener("mousedown", handleOutsideClick);
         };
-    }, [closeModal, stopScroll]);
+    }, [closeModal]);
 
     const handleModalClose = () => {
         closeModal();
-        document.body.style.overflow = "auto"; // Réactiver le défilement
     };
 
     const leftClick = () => {

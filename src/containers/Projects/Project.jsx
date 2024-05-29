@@ -7,10 +7,6 @@ import "./Project.scss";
 const Project = () => {
     const [selectedProject, setSelectedProject] = useState(null);
 
-    const handleClick = () => {
-        document.body.style.overflow = "hidden";
-    };
-
     const handleCardClick = (data) => {
         setSelectedProject(data);
     };
@@ -37,7 +33,6 @@ const Project = () => {
                     <ModalProject
                         projectData={selectedProject}
                         closeModal={() => setSelectedProject(null)}
-                        stopScroll={handleClick}
                     />
                 )}
             </div>

@@ -23,7 +23,7 @@ const Header = () => {
                         </a>
                     </li>
                     <a
-                        href="../../assets/cv-kevin-cordier.pdf"
+                        href="./cv-kevin-cordier.pdf"
                         download="cv-kevin-cordier.pdf"
                     >
                         <li className="header__linkContainer--nomargin">
